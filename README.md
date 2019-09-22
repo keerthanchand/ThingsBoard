@@ -3,10 +3,10 @@
 
 ### Libraries to be installed 
 
-Paho MQTT Python Client
+**Paho MQTT Python Client
 
-pip install paho-mqtt
+> pip install paho-mqtt
 
-Pyserial of Python 
+**Pyserial of Python 
 
-pip install pyserial
+> pip install pyserial
