@@ -5,7 +5,7 @@ const char* ssid = "Cortana";
 const char* password = "daddy@6T7";
 char* light1;
 char* fan1;
-#define TOKEN "GRMihgOmuyTwEHqKjVVi" //Access token of device Display
+#define TOKEN "xxxxxxxxxxxxxx" 
 char ThingsboardHost[] = "demo.thingsboard.io";
 
 WiFiClient wifiClient;
@@ -42,7 +42,6 @@ void getAndSendTemperatureAndHumidityData()
 {
   
  
-  // Prepare a JSON payload string
   String payload = "{";
  payload += "\"Lights\":";payload += light1; payload += ",";
  payload += "\"Fans\":";payload += fan1; 
@@ -56,7 +55,6 @@ void getAndSendTemperatureAndHumidityData()
 }
 
 void reconnect() {
-  // Loop until we're reconnected
   while (!client.connected()) {
     status = WiFi.status();
     if ( status != WL_CONNECTED) {
@@ -68,7 +66,6 @@ void reconnect() {
       Serial.println("Connected to AP");
     }
     Serial.print("Connecting to ThingsBoard node ...");
-    // Attempt to connect (clientId, username, password)
     if ( client.connect("Esp8266", TOKEN, NULL) ) {
       Serial.println( "[DONE]" );
     } else {
