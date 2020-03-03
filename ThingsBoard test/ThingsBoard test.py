@@ -5,7 +5,7 @@ import time
 import random
 from datetime import datetime
 
-ACCESS_TOKEN = '9QgFqcwTsfpe1fYUtnRQ'
+ACCESS_TOKEN = 'access_token_here'
 broker = "demo.thingsboard.io"
 port = 1883
 
